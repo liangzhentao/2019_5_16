@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <link rel="stylesheet" href="css/shouye.css">
+
+    <script>
+        window.onload= function () {
+            var banners = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num = 0;
+            setInterval(function () {
+                if (num == 2){
+                    num = 0
+                }else {
+                    for (var i = 0; i < banners.length; i++) {
+                        banners[i].style.display = "none";
+                        btns[i].style.backgroundColor = "#000"
+                    }
+                    banners[num].style.display = "block";
+                    btns[num].style.backgroundColor = "#fffd72";
+                    num++
+                }
+            },5000)
+        }
+    </script>
+
+</head>
+<body style="height: 2000px;">
+<!-- 头部-->
+<header>
+    <img src="img/top-left.png" align="left">
+    <img src="img/top-right.jpg" align="right">
+</header>
+
+<!-- 导航-->
+<div class="one">
+    <div class="two">
+        <div class="left1">
+            <a href="" title="首页" class="active">首页</a>
+            <a href="" title="国际机票">国际机票</a>
+            <a href="" title="国内机票">国内机票</a>
+            <a href="" title="民航咨询">民航咨询</a>
+            <a href="" title="民航问答">民航问答</a>
+        </div>
+        <div class="right1">
+            <a href="" title="登陆">
+                <div class="login">登陆</div></a>
+            <a href="" title="注册">注册</a>
+
+            <a href="">用户中心
+                <div class="sanjiao"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 热门城市 -->
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">&nbsp;&nbsp;&nbsp;深圳</a>
+    <a href="">&nbsp;&nbsp;&nbsp;北京</a>
+    <a href="">&nbsp;&nbsp;&nbsp;上海</a>
+    <a href="">&nbsp;&nbsp;&nbsp;广州</a>
+    <a href="">&nbsp;&nbsp;&nbsp;南京</a>
+    <a href="">&nbsp;&nbsp;&nbsp;天津</a>
+    <a href="">&nbsp;&nbsp;&nbsp;武汉</a>
+    <a href="">&nbsp;&nbsp;&nbsp;长沙</a>
+    <a href="">&nbsp;&nbsp;&nbsp;昆明</a>
+    <a href="">&nbsp;&nbsp;&nbsp;贵阳</a>
+    <a href="">&nbsp;&nbsp;&nbsp;成都</a>
+    <a href="">&nbsp;&nbsp;&nbsp;重庆</a>
+    <a href="">&nbsp;&nbsp;&nbsp;海口</a>
+    <a href=""> &nbsp;&nbsp;&nbsp;哈尔滨</a>
+    <a href="">&nbsp;&nbsp;&nbsp;更多</a>
+</div>
+
+<!--轮播图-->
+<div class="lunbo">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn" style="background-color: orange" ></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+<!--空白隔断-->
+<div class="tongyong"></div>
+
+<!--热门航线-->
+<div class="fly">
+<div class="yuding">
+<div class="left">
+    <span>热门航线预订</span>
+</div>
+    <div class="right">
+    <a href="">&nbsp;&nbsp;&nbsp;深圳</a>
+    <a href="">&nbsp;&nbsp;&nbsp;北京</a>
+    <a href="">&nbsp;&nbsp;&nbsp;上海</a>
+    <a href="">&nbsp;&nbsp;&nbsp;广州</a>
+    <a href="">&nbsp;&nbsp;&nbsp;南京</a>
+    <a href="">&nbsp;&nbsp;&nbsp;天津</a>
+    <a href="">&nbsp;&nbsp;&nbsp;武汉</a>
+    <a href="">&nbsp;&nbsp;&nbsp;长沙</a>
+    <a href="">&nbsp;&nbsp;&nbsp;昆明</a>
+    <a href="">&nbsp;&nbsp;&nbsp;重庆</a>
+    </div>
+</div>
+<div class="flypiao">1111</div>
+</div>
+
+</body>
+</html>
